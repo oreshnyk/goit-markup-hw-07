@@ -1,0 +1,18 @@
+{
+    "version": 3,
+    "mappings": ";AEAA,AAAA,UAAU,CAAC;EACT,KAAK,EAAE,MAAM;EACb,OAAO,EAAE,MAAM;EACf,MAAM,EAAE,MAAM;CACf;;AAED,AAAA,OAAO,CAAC,UAAU,CAAC;EACjB,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,QAAQ;EACrB,WAAW,EAAE,IAAI;EACjB,cAAc,EAAE,IAAI;CACrB;;AAED,AAAA,UAAU,CAAC,QAAQ,CAAC;EAClB,WAAW,EAAE,GAAG;EAChB,cAAc,EAAE,IAAI;CACrB;;AChBD,AAAA,KAAK,CAAC;EACJ,SAAS,EAAE,MAAM;EACjB,gBAAgB,EAAE,mBAAmB;EAErC,UAAU,EAAE,MAAM;EAElB,SAAS,EAAE,MAAM;EACjB,WAAW,EAAE,IAAI;EACjB,YAAY,EAAE,IAAI;EAElB,gBAAgB,EAAE,uEAIf,EACD,kCAAkC;EACpC,iBAAiB,EAAE,SAAS;EAC5B,mBAAmB,EAAE,MAAM;EAC3B,eAAe,EAAE,KAAK;EAEtB,WAAW,EAAE,KAAK;EAClB,cAAc,EAAE,KAAK;CACtB;;AAED,AAAA,aAAa,CAAC;EACZ,OAAO,EAAE,KAAK;EAEd,WAAW,EAAE,GAAG;EAChB,SAAS,EAAE,IAAI;EACf,WAAW,EAAE,IAAI;EACjB,UAAU,EAAE,MAAM;EAClB,cAAc,EAAE,MAAM;EACtB,cAAc,EAAE,SAAS;EAEzB,KAAK,EAAE,kBAAkB;CAC1B;;AAED,AAAA,YAAY,CAAC;EACX,gBAAgB,EAAE,mBAAmB;EACrC,KAAK,EAAE,kBAAkB;EACzB,MAAM,EAAE,OAAO;EAEf,UAAU,EAAE,GAAG,CAAC,GAAG,CAAC,GAAG,CAAC,mBAAmB;EAC3C,aAAa,EAAE,GAAG;EAClB,MAAM,EAAE,IAAI;EAEZ,cAAc,EAAE,MAAM;EAEtB,OAAO,EAAE,SAAS;EAClB,UAAU,EAAE,IAAI;CACjB;;AAED,AAAA,cAAc,CAAC;EACb,qBAAqB;EAErB,WAAW,EAAE,GAAG;EAChB,SAAS,EAAE,IAAI;EACf,WAAW,EAAE,IAAI;EAEjB,cAAc,EAAE,MAAM;CACvB",
+    "sources": [
+        "../sass/main.scss",
+        "../sass/utils/_variables.scss",
+        "../sass/components/_container.scss",
+        "../sass/components/_hero.scss",
+        "../sass/components/_features.scss",
+        "../sass/components/_work.scss",
+        "../sass/components/_team.scss",
+        "../sass/components/_clients.scss",
+        "../sass/components/_footer.scss",
+        "../sass/components/_backdrop.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
