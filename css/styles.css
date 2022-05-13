@@ -15,12 +15,12 @@
   --icon-primary-color: #afb1b8;
   --overlay-background: rgba(0, 0, 0, 0.2);
 }
-
-header {
+/* normalize or header */
+.header {
   border-bottom: 1px solid #ececec;
   background: var(--white-color);
 }
-
+/* normalize or header */
 body {
   background-color: var(--main-background-color);
   color: var(--primary-text-color);
@@ -29,17 +29,13 @@ body {
   font-size: 14px;
   letter-spacing: 0.03em;
 }
-
+/* footer */
 footer {
   background: var(--footer-color);
 }
 
-address {
-  font-style: normal;
 
-  line-height: 1.71;
-  margin-top: 20px;
-}
+/* footer ˆ */
 
 ul {
   padding-inline-start: 0px;
@@ -58,15 +54,13 @@ p {
   margin-block-end: 0;
 }
 
-.img-no-gap {
+.image--display-block {
   display: block;
 }
 
-.vector {
-  display: block;
-}
+.header__inner {
+  display: flex;
 
-.container {
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
@@ -75,8 +69,10 @@ p {
 .footer .container {
   display: flex;
   align-items: baseline;
+  /* падинги уже перенес в footer */
   padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 60px; 
+  /* падинги уже перенес в footer */
 }
 
 .section {
@@ -89,7 +85,8 @@ p {
   padding-bottom: 94px;
 }
 
-.hide {
+/* added to scss _base */
+.hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -101,10 +98,11 @@ p {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+/* added to scss _base */
 
 /* Logo */
-
-.logo-header {
+/* header&footer__logo уже с scss */
+.header__logo {
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
@@ -117,30 +115,12 @@ p {
   text-decoration: none;
 }
 
-.logo-black {
-  font-family: "Raleway";
-
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+.header__logo--black {
   color: var(--secondary-text-color);
 
-  letter-spacing: 0.03em;
-
-  text-decoration: none;
 }
 
-.logo-white {
-  font-family: "Raleway";
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-
-  color: var(--white-color);
-  text-decoration: none;
-}
-
-.logo-footer {
+.footer__logo {
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
@@ -152,22 +132,30 @@ p {
   text-decoration: none;
 }
 
-/* List */
+.footer__logo--white {
+  color: var(--white-color);
+}
+/* footer__logo уже с scss */
 
+
+
+/* List */
+/* +scss */
 .list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
+/* +scss */
 
 /* Site nav */
 
-.main-nav {
+.header__nav {
   display: flex;
   align-items: center;
 }
 
-.site-nav {
+.menu {
   display: flex;
   margin-left: 93px;
   padding-top: 32px;
@@ -179,15 +167,11 @@ p {
   letter-spacing: 0.02em;
 }
 
-.navigation {
-  display: flex;
-}
-
-.site-nav .item {
+.menu__item {
   position: relative;
 }
-
-.site-nav .item + .item {
+/* done with first-child */
+.menu .item + .item { 
   margin-left: 50px;
 }
 
@@ -206,7 +190,7 @@ p {
   margin-left: 30px;
 }
 
-.site-nav .link {
+.menu__link {
   padding: 32px 0;
   text-decoration: none;
   color: var(--secondary-text-color);
@@ -215,15 +199,15 @@ p {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.site-nav .link:hover,
-.site-nav .link:focus {
+.menu__link:hover,
+.menu__link:focus {
   color: var(--accent-color);
 }
-.site-nav .link.current {
+.menu__link--current {
   color: var(--accent-color);
 }
 
-.link.current::after {
+.menu__link--current::after {
   display: block;
   position: absolute;
 
@@ -239,10 +223,10 @@ p {
 a .link.current {
   position: relative;
 }
-
+/*  < done */
 .contact .link {
-  align-items: center;
   display: flex;
+  align-items: center;
   padding: 32px 0;
   text-decoration: none;
   color: var(--primary-text-color);
@@ -255,7 +239,7 @@ a .link.current {
 .contact .link:focus {
   color: var(--accent-color);
 }
-
+/* done > */
 .contact .link:hover .mail-icon {
   fill: var(--accent-color);
 }
@@ -881,6 +865,13 @@ p {
 
 /* Footer */
 
+.address {
+  font-style: normal;
+
+  line-height: 1.71;
+  margin-top: 20px;
+}
+
 .address .item + .item {
   margin-top: 9px;
 }
@@ -1168,14 +1159,14 @@ footer .social-icon {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+/* add to class textarea */
 textarea {
   resize: none;
 }
-
 textarea::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
+/* add to class textarea */
 
 .submit-form {
   width: 200px;

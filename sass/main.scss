@@ -1,6 +1,8 @@
 @import "./utils/variables";
-@import "./components/container";
+@import "./utils/base";
+@import "./components/header";
 @import "./components/hero";
+@import "./components/container"; // test
 @import "./components/features";
 @import "./components/work";
 @import "./components/team";

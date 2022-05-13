@@ -1,0 +1,28 @@
+.footer {
+  background: var(--footer-color);
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &__logo {
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+
+    letter-spacing: 0.03em;
+
+    color: $accent-color;
+    text-decoration: none;
+    &--white {
+      color: $white-color;
+    }
+  }
+}
+
+.address {
+  font-style: normal;
+
+  line-height: 1.71;
+  margin-top: 20px;
+}
