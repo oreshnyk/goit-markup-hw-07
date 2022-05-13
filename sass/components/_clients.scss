@@ -40,8 +40,12 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  //   background-color: $white-color;
-  //   background: $secondary-background-color;
+  .client__link:hover & {
+    outline-color: $accent-color;
+  }
+  .client__link:focus & {
+    outline-color: $accent-color;
+  }
 }
 .client__icon {
   width: 106px;
@@ -51,4 +55,10 @@
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  .client__link:hover & {
+    fill: $accent-color;
+  }
+  .client__link:focus & {
+    fill: $accent-color;
+  }
 }
