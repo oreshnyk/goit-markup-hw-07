@@ -440,41 +440,41 @@
             <!-- Backdrop -->
             <div class="backdrop is-hidden" data-modal>
                 <div class="modal">
-                    <h3 class="heading-form">Оставьте свои данные, мы вам перезвоним</h3>
-                    <div class="modal-form">
-                        <div class="wraper">
-                            <label class="label" for="name">Имя</label>
-                            <input class="input" type="text" name="name" id="name" autocomplete="on" />
-                                <svg class="user-icon form-icon">
+                    <h3 class="modal__heading">Оставьте свои данные, мы вам перезвоним</h3>
+                    <div class="modal__form">
+                        <div class="form__wraper">
+                            <label class="form__label" for="name">Имя</label>
+                            <input class="form__input" type="text" name="name" id="name" autocomplete="on" />
+                                <svg class="form__icon form__icon--user">
                                     <use href="./images/icons-defs.svg#icon-person"></use>
                                 </svg>
-                            <label class="label" for="number">Телефон</label>
-                            <input class="input" type="number" name="number" id="number" autocomplete="on" />
-                                <svg class="form-phone-icon form-icon">
+                            <label class="form__label" for="number">Телефон</label>
+                            <input class="form__input" type="number" name="number" id="number" autocomplete="on" />
+                                <svg class="form__icon form__icon--phone">
                                     <use href="./images/icons-defs.svg#icon-phone-black"></use>
                                 </svg>
-                            <label class="label" for="email">Почта</label>
-                            <input class="input" type="email" name="email" id="email" autocomplete="on" />
-                                <svg class="form-email-icon form-icon">
+                            <label class="form__label" for="email">Почта</label>
+                            <input class="form__input" type="email" name="email" id="email" autocomplete="on" />
+                                <svg class="form__icon form__icon--email">
                                     <use href="./images/icons-defs.svg#icon-email-black"></use>
                                 </svg>
-                            <label class="label" for="feedback">Комментарий</label>
-                            <textarea class="comment" name="feedback" id="feedback" rows="5" placeholder="Введите текст"></textarea>
+                            <label class="form__label" for="feedback">Комментарий</label>
+                            <textarea class="form__comment" name="feedback" id="feedback" rows="5" placeholder="Введите текст"></textarea>
 
-                            <div class="wraper-submit">
-                            <label class="agreement" for="agreement">
+                            <div class="form-submit">
+                            <label class="form-agreement" for="agreement">
                                 <input class="check__input" type="checkbox" name="agreement" value="agreement" id="agreement">
                                 <span class="check__box"></span>
-                                Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a>
+                                Соглашаюсь с рассылкой и принимаю <a class="form-agreement--link" href="#">Условия договора</a>
                             </label>
                             
-                            <button class="submit-form" type="submit">Отправить</button>
+                            <button class="form-submit__button" type="submit">Отправить</button>
                             </div>
                         </div>
                     </div>
 
-                    <button type="button" class="close-modal" data-modal-close>
-                        <svg class="modal-icon">
+                    <button class="modal__button" type="button" data-modal-close>
+                        <svg class="modal__icon">
                             <use href="./images/icons-defs.svg#icon-close-modal"></use>
                         </svg>
                     </button>

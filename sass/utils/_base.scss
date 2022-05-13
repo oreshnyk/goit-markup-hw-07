@@ -45,6 +45,10 @@ p {
   letter-spacing: 0.03em;
 }
 
+textarea {
+  resize: none;
+}
+
 .hidden {
   position: absolute;
   width: 1px;
@@ -56,6 +60,12 @@ p {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
 }
 
 .image--display-block {
