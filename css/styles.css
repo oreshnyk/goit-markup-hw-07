@@ -494,7 +494,7 @@ a .link.current {
 
 /* ДЗ 5 конец */
 
-.btm-border {
+.gallery__card-footer {
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
